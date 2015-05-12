@@ -80,6 +80,7 @@ Currently the only tested platform is CentOS7 but there is some code supporting 
 ## Usage
 
 ### gitlab::default
+Installs a Gitlab server onto the target.
 
 ## License and Authors
 
