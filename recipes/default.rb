@@ -19,7 +19,9 @@ end
 
 include_recipe 'gitlab::setup_repository'
 
-package 'gitlab-ce'
+package 'gitlab-ce' do
+  timeout 1200
+end
 
 template '/etc/gitlab/gitlab.rb' do
 	source 'gitlab.rb.erb'
