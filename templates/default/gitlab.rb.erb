@@ -41,7 +41,7 @@ main: # 'main' is the GitLab 'provider ID' of this LDAP server
   label: 'LDAP'
   host: '<%= node['gitlab']['ldap']['host']%>'
   port: <%= node['gitlab']['ldap']['port']%>
-  uid: 'sAMAccountName'
+  uid: '<%= node['gitlab']['ldap']['uid']%>'
   method: '<%= node['gitlab']['ldap']['method']%>' # "tls" or "ssl" or "plain"
   base: '<%= node['gitlab']['ldap']['base']%>'
   bind_dn: '<%= node['gitlab']['ldap']['bind_dn']%>'
