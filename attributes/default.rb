@@ -1,0 +1,1 @@
+default[:gitlab][:external_url][:protocol] = 'http'
